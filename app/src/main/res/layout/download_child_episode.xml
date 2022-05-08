@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/download_child_episode_holder"
+    android:layout_width="match_parent"
+
+    android:layout_height="50dp"
+    android:layout_marginBottom="5dp"
+    android:foreground="@drawable/outline_drawable"
+    android:nextFocusLeft="@id/nav_rail_view"
+    android:nextFocusRight="@id/download_child_episode_download"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardCornerRadius="@dimen/rounded_image_radius"
+    app:cardElevation="0dp">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/download_child_episode_progress"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-1.5dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/greenprogress"
+        android:progressBackgroundTint="?attr/colorPrimary"
+        android:visibility="visible"
+        tools:progress="50"
+        tools:visibility="visible" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:id="@+id/download_child_episode_play"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/episode_play_img_des"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/download_child_episode_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+
+                android:singleLine="true"
+                android:textColor="?attr/textColor"
+                tools:text="Episode 1 Episode 1 Episode 1 Episode 1 Episode 1 Episode 1 Episode 1" />
+
+            <TextView
+                android:id="@+id/download_child_episode_text_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:textColor="?attr/grayTextColor"
+                tools:text="128MB / 237MB" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginStart="-50dp">
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/download_child_episode_progress_downloaded"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/download_child_episode_download"
+                android:layout_width="30dp"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/download"
+                android:nextFocusLeft="@id/download_child_episode_holder"
+                android:nextFocusRight="@id/download_child_episode_holder"
+                android:padding="2dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:visibility="visible"
+                app:tint="?attr/textColor" />
+        </FrameLayout>
+    </GridLayout>
+</androidx.cardview.widget.CardView>

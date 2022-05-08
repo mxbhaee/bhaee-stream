@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory />
+    <PreferenceCategory
+        android:key="video"
+        android:title="Player"
+        app:isPreferenceVisible="true">
+        <Preference
+            android:icon="@drawable/ic_outline_subtitles_24"
+            android:key="@string/subtitle_settings_key"
+            android:title="@string/player_subtitles_settings"
+            app:summary="@string/player_subtitles_settings_des" />
+        <Preference
+            android:icon="@drawable/ic_outline_subtitles_24"
+            android:key="@string/subtitle_settings_chromecast_key"
+            android:title="@string/chromecast_subtitles_settings"
+            app:summary="@string/chromecast_subtitles_settings_des" />
+        <Preference
+            android:icon="@drawable/ic_baseline_hd_24"
+            android:key="@string/quality_pref_key"
+            android:title="@string/watch_quality_pref" />
+        <Preference
+            android:icon="@drawable/ic_baseline_text_format_24"
+            android:key="@string/prefer_limit_title_key"
+            android:title="@string/limit_title" />
+
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_picture_in_picture_alt_24"
+            android:summary="@string/picture_in_picture_des"
+            android:title="@string/picture_in_picture"
+            app:defaultValue="true"
+            app:key="@string/pip_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_aspect_ratio_24"
+            android:summary="@string/player_size_settings_des"
+            android:title="@string/player_size_settings"
+            app:defaultValue="true"
+            app:key="@string/player_resize_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_speed_24"
+            android:summary="@string/eigengraumode_settings_des"
+            android:title="@string/eigengraumode_settings"
+            app:defaultValue="false"
+            app:key="@string/playback_speed_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_ondemand_video_24"
+            android:summary="@string/swipe_to_seek_settings_des"
+            android:title="@string/swipe_to_seek_settings"
+            app:defaultValue="true"
+            app:key="@string/swipe_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_ondemand_video_24"
+            android:summary="@string/swipe_to_change_settings_des"
+            android:title="@string/swipe_to_change_settings"
+            app:defaultValue="true"
+            app:key="@string/swipe_vertical_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_touch_app_24"
+            android:summary="@string/double_tap_to_seek_settings_des"
+            android:title="@string/double_tap_to_seek_settings"
+            app:defaultValue="false"
+            app:key="@string/double_tap_enabled_key" />
+        <SwitchPreference
+            android:icon="@drawable/netflix_pause"
+            android:summary="@string/double_tap_to_pause_settings_des"
+            android:title="@string/double_tap_to_pause_settings"
+            app:defaultValue="false"
+            app:key="@string/double_tap_pause_enabled_key" />
+
+        <SwitchPreference
+            android:icon="@drawable/baseline_sync_24"
+            android:summary="@string/episode_sync_settings_des"
+            android:title="@string/episode_sync_settings"
+            app:defaultValue="true"
+            app:key="@string/episode_sync_enabled_key" />
+
+        <Preference
+            android:icon="@drawable/ic_baseline_storage_24"
+            android:key="@string/video_buffer_disk_key"
+            android:summary="@string/video_disk_description"
+            android:title="@string/video_buffer_disk_settings" />
+
+        <Preference
+            android:icon="@drawable/ic_baseline_storage_24"
+            android:key="@string/video_buffer_size_key"
+            android:summary="@string/video_ram_description"
+            android:title="@string/video_buffer_size_settings" />
+
+        <Preference
+            android:icon="@drawable/ic_baseline_storage_24"
+            android:key="@string/video_buffer_length_key"
+            android:summary="@string/video_ram_description"
+            android:title="@string/video_buffer_length_settings" />
+
+        <Preference
+            android:icon="@drawable/ic_baseline_delete_outline_24"
+            android:key="@string/video_buffer_clear_key"
+            android:title="@string/video_buffer_clear_settings" />
+        <!--
+        <SwitchPreference
+                android:icon="@drawable/ic_baseline_brightness_7_24"
+                app:key="@string/use_system_brightness_key"
+                android:title="@string/use_system_brightness_settings"
+                android:summary="@string/use_system_brightness_settings_des"
+                app:defaultValue="false"
+        />
+        -->
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="general"
+        android:title="@string/general"
+        app:isPreferenceVisible="true">
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_play_arrow_24"
+            android:summary="@string/random_button_settings_desc"
+            android:title="@string/random_button_settings"
+            app:defaultValue="false"
+            app:key="@string/random_button_key" />
+        <Preference
+            android:icon="@drawable/ic_baseline_language_24"
+            android:key="@string/provider_lang_key"
+            android:title="@string/provider_lang_settings" />
+        <Preference
+            android:icon="@drawable/ic_baseline_language_24"
+            android:key="@string/locale_key"
+            android:title="@string/app_language" />
+        <Preference
+            android:icon="@drawable/ic_baseline_play_arrow_24"
+            android:key="@string/prefer_media_type_key"
+            android:title="@string/preferred_media_settings" />
+        <Preference
+            android:icon="@drawable/ic_outline_voice_over_off_24"
+            android:key="@string/display_sub_key"
+            android:title="@string/display_subbed_dubbed_settings" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_baseline_skip_next_24"
+            android:key="@string/show_fillers_key"
+            android:title="@string/show_fillers_settings" />
+        <Preference
+            android:icon="@drawable/ic_baseline_dns_24"
+            android:key="@string/dns_key"
+            android:summary="@string/dns_pref_summary"
+            android:title="@string/dns_pref" />
+        <Preference
+            android:icon="@drawable/netflix_download"
+            android:key="@string/download_path_key"
+            android:title="@string/download_path_pref" />
+        <Preference
+            android:icon="@drawable/ic_baseline_tv_24"
+            android:key="@string/app_layout_key"
+            android:title="@string/app_layout" />
+        <Preference
+            android:icon="@drawable/ic_baseline_color_lens_24"
+            android:key="@string/primary_color_key"
+            android:title="@string/primary_color_settings" />
+        <Preference
+            android:icon="@drawable/ic_baseline_color_lens_24"
+            android:key="@string/app_theme_key"
+            android:title="@string/app_theme_settings" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/baseline_grid_view_24"
+            android:key="@string/bottom_title_key"
+            android:summary="@string/bottom_title_settings_des"
+            android:title="@string/bottom_title_settings" />
+        <Preference
+            android:icon="@drawable/ic_baseline_tv_24"
+            android:key="@string/poster_ui_key"
+            android:title="@string/poster_ui_settings" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="search"
+        android:title="@string/search"
+        app:isPreferenceVisible="true">
+        <SwitchPreference
+            android:icon="@drawable/search_icon"
+            android:summary="@string/advanced_search_des"
+            android:title="@string/advanced_search"
+            app:defaultValue="true"
+            app:key="advanced_search" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="@string/nginx_category"
+        android:title="@string/nginx_category"
+        app:isPreferenceVisible="true">
+        <Preference
+            android:icon="@drawable/ic_baseline_play_arrow_24"
+            android:key="@string/nginx_url_key"
+            android:title="@string/nginx_url_pref" />
+        <Preference
+            android:icon="@drawable/video_locked"
+            android:key="@string/nginx_credentials"
+            android:summary="@string/nginx_credentials_summary"
+            android:title="@string/nginx_credentials_title" />
+        <Preference
+            android:icon="@drawable/ic_baseline_play_arrow_24"
+            android:key="@string/nginx_info"
+            android:summary="@string/nginx_info_summary"
+            android:title="@string/nginx_info_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.sarlays.com/use-nginx-with-cloudstream/" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="info"
+        android:title="@string/settings_info"
+        app:isPreferenceVisible="true">
+        <Preference
+            android:icon="@drawable/ic_baseline_warning_24"
+            android:key="@string/legal_notice_key"
+            android:title="@string/legal_notice" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_baseline_bug_report_24"
+            android:key="acra.disable"
+            android:summaryOff="@string/bug_report_settings_off"
+            android:summaryOn="@string/bug_report_settings_on"
+            android:title="@string/pref_disable_acra" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:summary="@string/updates_settings_des"
+            android:title="@string/updates_settings"
+            app:defaultValue="true"
+            app:key="@string/auto_update_key" />
+        <SwitchPreference
+            android:icon="@drawable/ic_baseline_developer_mode_24"
+            android:summary="@string/uprereleases_settings_des"
+            android:title="@string/uprereleases_settings"
+            app:defaultValue="false"
+            app:key="@string/prerelease_update_key" />
+        <Preference
+            android:title="@string/check_for_update"
+            app:icon="@drawable/ic_baseline_system_update_24"
+            app:key="@string/manual_check_update_key"
+            app:summary="@string/app_version" />
+
+        <Preference
+            android:icon="@drawable/baseline_save_as_24"
+            android:key="@string/backup_key"
+            android:title="@string/backup_settings" />
+
+        <Preference
+            android:icon="@drawable/baseline_restore_page_24"
+            android:key="@string/restore_key"
+            android:title="@string/restore_settings" />
+
+        <Preference
+            android:icon="@drawable/baseline_description_24"
+            android:key="@string/show_logcat_key"
+            android:title="@string/show_log_cat" />
+
+        <!--<SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/log_enabled_key"
+                android:title="@string/toggle_logcat"
+                android:summary="@string/toggle_logcat_des"
+                android:icon="@drawable/baseline_description_24" />-->
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/netflix_download"
+            android:key="@string/killswitch_key"
+            android:summary="@string/killswitch_settings_des"
+            android:title="@string/killswitch_settings" />
+
+        <Preference
+            android:icon="@drawable/mal_logo"
+            android:key="@string/mal_key" />
+
+        <Preference
+            android:icon="@drawable/ic_anilist_icon"
+            android:key="@string/anilist_key" />
+
+        <Preference
+            android:icon="@drawable/ic_github_logo"
+            android:title="@string/github"
+            app:isPreferenceVisible="false"
+            app:summary="https://github.com/LagradOst/CloudStream-3">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/LagradOst/CloudStream-3" />
+        </Preference>
+
+        <Preference
+            android:icon="@drawable/quick_novel_icon"
+            android:title="@string/lightnovel"
+            app:isPreferenceVisible="false"
+            app:summary="https://github.com/LagradOst/QuickNovel">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/LagradOst/QuickNovel" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_baseline_discord_24"
+            android:title="@string/discord"
+            app:isPreferenceVisible="false"
+            app:summary="https://discord.gg/5Hus6fM">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://discord.gg/5Hus6fM" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/benene"
+            android:key="@string/benene_count"
+            android:title="@string/benene"
+            app:summary="@string/benene_des" />
+    </PreferenceCategory>
+</PreferenceScreen>
