@@ -39,7 +39,7 @@ The app is purely for educational and personal use.
 
 bhaee stream does not host any content on the app, and has no control over what media is put up or taken down. bhaee stream functions like any other search engine, such as Google. bhaee stream does not host, upload or manage any videos, films or content. It simply crawls, aggregates and displayes links in a convenient, user-friendly interface.
 
-It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use CloudStream 3 at your own risk.
+It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use bhaee stream at your own risk.
 
 
 ***Sites used:***
