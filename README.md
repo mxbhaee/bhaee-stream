@@ -25,25 +25,9 @@ https://github.com/mxbhaee/bhaee-stream/releases
 <img src="./.github/player.jpg" height="200"/>
 
 ***The list of supported languages:***
-* 🇱🇧 Arabic
-* 🇳🇱 Dutch
 * 🇬🇧 English
 * 🇫🇷 French
-* 🇩🇪 German
-* 🇬🇷 Greek
-* 🇮🇳 Hindi
-* 🇮🇹 Italian
-* 🇲🇰 Macedonian
-* 🇮🇳 Malayalam
-* 🇳🇴 Norsk
-* 🇵🇱 Polish
-* 🇧🇷 Portuguese (Brazil)
-* 🇷🇴 Romanian
-* 🇪🇸 Spanish
-* 🇸🇪 Swedish
-* 🇵🇭 Tagalog
-* 🇹🇷 Turkish
-* 🇻🇳 Vietnamese
+* Lu Luganda
 
 ***Disclaimer:***
 
@@ -53,7 +37,7 @@ In case of copyright infringement, please directly contact the responsible parti
 
 The app is purely for educational and personal use.
 
-CloudStream 3 does not host any content on the app, and has no control over what media is put up or taken down. CloudStream 3 functions like any other search engine, such as Google. CloudStream 3 does not host, upload or manage any videos, films or content. It simply crawls, aggregates and displayes links in a convenient, user-friendly interface.
+bhaee stream does not host any content on the app, and has no control over what media is put up or taken down. bhaee stream functions like any other search engine, such as Google. bhaee stream does not host, upload or manage any videos, films or content. It simply crawls, aggregates and displayes links in a convenient, user-friendly interface.
 
 It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use CloudStream 3 at your own risk.
 
