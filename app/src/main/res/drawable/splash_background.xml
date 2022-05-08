@@ -7,7 +7,7 @@
     <item
         android:width="150dp"
         android:height="150dp"
-        android:drawable="@drawable/bhaee_logo"
+        android:drawable="@mipmap/ic_launcher"
         android:gravity="center"
         tools:ignore="UnusedAttribute" />
 </layer-list>
