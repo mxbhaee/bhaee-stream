@@ -10,7 +10,7 @@ URL_REGEX = compile(
     "override\sva[lr]\smainUrl[^\"']+[\"'](https?://[a-zA-Z0-9\.-]+)[\"']")
 NAME_REGEX = compile("([A-Za-z0-9]+)(?:.kt)$")
 JSON_PATH = "docs/providers.json"
-GLOB = "app/src/main/java/com/mxbhaee/bhaee-stream/*providers/*Provider.kt"
+GLOB = "app/src/main/java/com/bhaee/stream/com/*providers/*Provider.kt"
 
 old_sites: Dict[str, Dict] = load(open(JSON_PATH, "r", encoding="utf-8"))
 sites: Dict[str, Dict] = {}
