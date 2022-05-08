@@ -19,12 +19,16 @@ android {
     }
     signingConfigs {
         prerelease {
-            if (prerelaseStoreFile != null) {
-                storeFile = file(prerelaseStoreFile)
-                storePassword System.getenv("SIGNING_STORE_PASSWORD")
-                keyAlias System.getenv("SIGNING_KEY_ALIAS")
-                keyPassword System.getenv("SIGNING_KEY_PASSWORD")
-            }
+            storeFile file('app/prerelease_keystore.keystore')
+            storePassword '12345678'
+            keyAlias 'bhaee'
+            keyPassword 'bhaee'
+        }
+        release {
+            storeFile file('app/prerelease_keystore.keystore')
+            storePassword '12345678'
+            keyAlias 'bhaee'
+            keyPassword 'bhaee'
         }
     }
     compileSdkVersion 31
@@ -38,8 +42,7 @@ android {
         versionCode 47
         versionName "1.0.0"
 
-        resValue "string", "app_version",
-                "${defaultConfig.versionName}${versionNameSuffix ?: ""}"
+        resValue "string", "app_version", "${defaultConfig.versionName}${versionNameSuffix ?: ""}"
 
         buildConfigField("String", "BUILDDATE", "new java.text.SimpleDateFormat(\"yyyy-MM-dd HH:mm\").format(new java.util.Date(" + System.currentTimeMillis() + "L));")
 
