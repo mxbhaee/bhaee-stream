@@ -1,5 +1,4 @@
 name: Create site list
-
 on:
   push:
     branches: [ master ]
