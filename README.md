@@ -4,8 +4,6 @@
 ![GitHub release](https://img.shields.io/github/v/release/mxbhaee/bhaee-stream?sort=semver&style=for-the-badge)
 ![Downloads](https://img.shields.io/github/downloads/mxbhaee/bhaee-stream/total?color=blue&style=for-the-badge)
 ![Build](https://img.shields.io/github/workflow/status/mxbhaee/bhaee-stream/Pre-release?style=for-the-badge)
-[![Discord](https://img.shields.io/discord/737724143126052974?style=for-the-badge)](https://discord.gg/5Hus6fM)
-
 
 **DOWNLOAD:**
 https://github.com/mxbhaee/bhaee-stream/releases
