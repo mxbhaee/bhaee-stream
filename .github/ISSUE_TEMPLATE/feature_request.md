@@ -1,9 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+title: 'bhaee stream'
+labels: 'bhaee stream feature requests'
+assignees: 'bhaee'
 
 ---
 
