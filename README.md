@@ -9,23 +9,13 @@
 https://github.com/mxbhaee/bhaee-stream/releases
 
 
-***Features:***
-+ **AdFree**, No ads whatsoever
-+ No tracking/analytics
-+ Bookmarks
-+ Download and stream movies, tv-shows and anime
-+ Chromecast
-
-***Screenshots:***
-(All the images are blurred because of DMCA reasons, but are actually not blurred in the app)
-
-<img src="./.github/home.jpg" height="400"/><img src="./.github/search.jpg" height="400"/><img src="./.github/downloads.jpg" height="400"/><img src="./.github/results.jpg" height="400"/>
-<img src="./.github/player.jpg" height="200"/>
-
 ***The list of supported languages:***
 * 🇬🇧 English
 * 🇫🇷 French
 * Lu Luganda
+
+
+```
 
 ***Disclaimer:***
 
@@ -39,7 +29,9 @@ bhaee stream does not host any content on the app, and has no control over what 
 
 It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use bhaee stream at your own risk.
 
-
 ***Sites used:***
 
+```
+
+Credits to the developer Osten LagradOst [here](https://github.com/LagradOst)
 Look [here](https://mxbhaee.github.io/bhaee-stream/) for a comprehensive list
