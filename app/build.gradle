@@ -19,16 +19,16 @@ android {
     }
     signingConfigs {
         prerelease {
-            storeFile file('app/prerelease_keystore.keystore')
+            storeFile file('prerelease.jks')
             storePassword '12345678'
             keyAlias 'bhaee'
-            keyPassword 'bhaee'
+            keyPassword '12345678'
         }
         release {
-            storeFile file('app/prerelease_keystore.keystore')
+            storeFile file('prerelease.jks')
             storePassword '12345678'
             keyAlias 'bhaee'
-            keyPassword 'bhaee'
+            keyPassword '12345678'
         }
     }
     compileSdkVersion 31
