@@ -8,7 +8,7 @@ on:
       - '*.json'
 
 concurrency: 
-  group: "pre-release"
+  group: "pre-release-beta"
   cancel-in-progress: true
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "pre-release"
+        automatic_release_tag: "pre-release-beta"
         prerelease: true
         title: "Pre-release beta"
         files: |
