@@ -4,11 +4,11 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'app/src/main/java/com/bhaee/stream/com/*providers/*Provider.kt'
+      - 'app/src/main/java/bhaee/stream/com/*providers/*Provider.kt'
       - '.github/workflows/site_list.yml'
       - '.github/site-list.py'
       - 'docs/providers.json'
-      - 'app/src/main/java/com/bhaee/stream/com/MainAPI.kt'
+      - 'app/src/main/java/bhaee/stream/com/MainAPI.kt'
 
 concurrency: 
   group: "site-list"
